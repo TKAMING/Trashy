@@ -7,11 +7,15 @@ Ofcours will the user have to pay for this service.
 +
 the users can add a note for the admin for maybe cut the lawn.
 
+
+
 ## How it is in Germany
 in Germany there are yellow cans for plastic, black cans for residual waste etc.
 
+
 ## Extras for the Service Provider
 A Admin pannel to manage the users with fancy graphs.
+
 
 ## Technologies used:
 Python, Python, Flask, CS50 python library, HTML, CSS, SQLite3
