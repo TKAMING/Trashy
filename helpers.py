@@ -1,4 +1,5 @@
 # trashy by Tobias Karuth (for cs50 final project)
+
 import os
 import requests
 import urllib.parse
