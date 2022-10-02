@@ -31,8 +31,18 @@ def after_request(response):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    if request.method == "POST": 
-        db.execute("INSERT")
+    if request.method == "POST":
+        first_name = request.form.get("first_name") 
+        last_name = request.form.get("last_name") 
+        email = request.form.get("email") 
+        yellow_can = request.form.get("yellow_can") 
+        black_can = request.form.get("black_can") 
+        brown_can = request.form.get("brown_can") 
+        blue_can = request.form.get("blue_can")
+
+        # inserts the user in the db 
+        db.execute("INSERT INTO users ( first_name, last_name, email, yellow_can, black_can, brown_can, blue_can) VALUES (?, ?, ?, ?, ?, ?, ?)"
+        , first_name, last_name, email, yellow_can, black_can, brown_can, blue_can)
 
     else:
         return render_template("index.html")
