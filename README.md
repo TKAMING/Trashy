@@ -9,20 +9,23 @@ the users can add a note for the admin for maybe cut the lawn.
 
 
 ## How it is in Germany
-in Germany there are yellow cans for plastic, black cans for residual waste etc.
+in Germany there are yellow cans for plastic, black cans for residual waste, brown cans for organic waste and blue cans for paper waste.
 
 # How to register as a new Admin for your neighbourhood
 Go to
 
     https://trashy.com/admin/register
 
+And fill out the form
+
+    TODO
 
 ## Extras for the Service Provider
 A Admin pannel to manage the users with fancy graphs.
 
 
 ## Technologies used:
-Python, Python, Flask, CS50 python library, HTML, CSS, SQLite3
+Python, Flask, CS50 python library, HTML, CSS, SQLite3
 
 
 ## To Do´s
@@ -30,7 +33,7 @@ Python, Python, Flask, CS50 python library, HTML, CSS, SQLite3
 🟢 = done
 
 🔴 User page (/)
-    - for the user´s to submit the services the Service provider (Admin) has to offer   for  them
+    - for the user´s to submit the services the Service provider (Admin) has to offer for  them
 
 🔴 what we do page
     - with the newest events from Trashy
