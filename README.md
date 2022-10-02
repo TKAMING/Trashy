@@ -50,5 +50,5 @@ Python, Python, Flask, CS50 python library, HTML, CSS, SQLite3
     🔴 log file data
         - Different page
 
-    🔴 Different user count´s for different admin´s in different neighbourhoods
+🔴 Different user count´s for different admin´s in different neighbourhoods
 
