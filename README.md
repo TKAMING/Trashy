@@ -19,3 +19,35 @@ A Admin pannel to manage the users with fancy graphs.
 
 ## Technologies used:
 Python, Python, Flask, CS50 python library, HTML, CSS, SQLite3
+
+
+
+
+
+## To Do´s
+🔴 = NOT done
+🟢 = done
+
+🔴 User page (/)
+    - for the user´s to submit the services the Service provider (Admin) has to offer   for  them
+
+🔴 what we do page
+    - with the newest events from Trashy
+
+🔴 where we are 
+    - with our Team
+
+🔴 Impressum
+
+🔴 Admin login
+    - to see the admin pannel
+
+🔴 Admin register
+    🔴 Feature to create differents Admin´s (maybe with sessions)
+
+🔴 Admin pannel
+    🔴 Graphs
+    🔴 log file data
+        - Different page
+    🔴 Different user count´s for different admin´s in different neighbourhoods
+
