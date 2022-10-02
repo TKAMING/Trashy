@@ -2,9 +2,20 @@
 
 <!-- TODO chose different name-->
 {% block title %}
-    select your 
+    submit garbage cans
 {% endblock %}
 
 {% block main %}
-
+<form action="/" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="first_name" name="first_name" placeholder="First name" type="text">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="last_name" name="last_name" placeholder="Last name" type="text">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email" type="email">
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
 {% endblock %}
