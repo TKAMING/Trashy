@@ -27,8 +27,12 @@ def after_request(response):
     response.headers["Expires"] = 0
     response.headers["Pragma"] = "no-cache"
     return response
-# TODO
+# TODO different routs to add 
 
-@app.route("/", methods=["GET"])
-def index(): 
-    return render_template("index.html")
+@app.route("/", methods=["GET", "POST"])
+def index():
+    if request.method == "POST": 
+        db.execute("INSERT")
+
+    else:
+        return render_template("index.html")
