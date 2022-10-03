@@ -51,6 +51,7 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3
 
 🔴 Admin pannel
     🔴 Graphs
+    🔴 a table with all the registered users for this admin
     🔴 log file data
         - Different page
 
