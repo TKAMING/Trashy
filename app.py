@@ -50,11 +50,11 @@ def index():
         , first_name, last_name, email, city, state, zip, street, house_number,yellow_can, black_can, brown_can, blue_can)
 
         # TODO add an alert to say that succesfully got submited
-        
+
         return redirect("/") 
 
     else:
-        return render_template("index.html")
+        return redirect("index.html")
 
 @app.route("/what_we_do")
 def what_we_do():
