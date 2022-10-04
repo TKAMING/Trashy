@@ -6,14 +6,18 @@
 {% endblock %}
 
 {% block main %}
+<!-- TODO the links and look -->
 <nav class="navbar sticky-top bg-dark mb-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index">Trashy</a>
-      <a class="navbar-link" href="/what_we_do">What we do</a>
+      <a class="navbar-brand" href="/">Trashy</a>
+      <a class="navbar-text-light" href="/what_we_do">What we do</a>
       <a class="navbar-text" href="/where_we_are">The Team</a>
       <a class="navbar-item" href="/imprint">Imprint</a>
     </div>
 </nav>
+<div class="alert alert-success" role="alert">
+    Your are now registered ✔
+</div>
 <form action="/" method="post">
     <div class="row">
         <div class="mb-3">
@@ -62,6 +66,6 @@
             <label for="blue_can">Blue can</label>
         </div>
     </fieldset>
-    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-success" type="submit">Submit</button>
 </form>
 {% endblock %}
