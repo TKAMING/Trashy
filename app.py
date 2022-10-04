@@ -46,7 +46,7 @@ def index():
         blue_can = request.form.get("blue_can")
 
         # inserts the user in the db 
-        db.execute("INSERT INTO users ( first_name, last_name, email, city, state, zip, street, house_number, yellow_can, black_can, brown_can, blue_can) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        db.execute("INSERT INTO users ( first_name, last_name, email, city, state, zip, street, house_number, yellow_can, black_can, brown_can, blue_can ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );"
         , first_name, last_name, email, city, state, zip, street, house_number,yellow_can, black_can, brown_can, blue_can)
 
         # TODO add an alert to say that succesfully got submited 
