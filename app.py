@@ -53,3 +53,7 @@ def index():
 
     else:
         return render_template("index.html")
+
+@app.route("/what_we_do", methods=["GET"])
+def what_we_do():
+    return render_template("what_we_do.html")
