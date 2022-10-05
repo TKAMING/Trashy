@@ -75,8 +75,6 @@ a[href="/"] {
     text-decoration: none;
 }
 
-.photo {
-    justify-content: center;
-    height: 500px;
-    width: 430px;
+.img-thumbnail {
+    border-radius: 10px;
 }
