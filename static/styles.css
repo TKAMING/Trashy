@@ -12,13 +12,16 @@ body {
     border-end-start-radius: 10px;
 }
 
-.nav-link {
-    color: black;
-}
-
 .logo {
     width: 100px;
     height: 100px;
+}
+
+.checkbox {
+    justify-content: center;
+    align-items: center auto;
+    display: inline-block;
+    width: 180px;
 }
 
 .button {
