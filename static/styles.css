@@ -18,6 +18,10 @@ body {
     height: 100px;
 }
 
+.button {
+    cursor: pointer;
+}
+
 .message {
     animation: buttons .3s linear;
 }

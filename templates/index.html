@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block main %}
-<!-- TODO the links and look -->
+<!-- TODO the look -->
 <nav class="navbar sticky-top bg-dark mb-3">
     <div class="container-fluid">
       <a href="/">
@@ -65,13 +65,13 @@
             <label for="blue_can">Blue can</label>
         </div>
     </fieldset>
-    <button class="btn btn-success mb-3" onclick="message()">Submit</button>
+    <button class="btn btn-success mb-3" onclick="message()" id="send">Submit</button>
 </form>
 <div class="message">
-    <div class="alert alert-success" role="alert" id="success">
+    <div class="alert alert-success" id="success">
         Your are now registered ✔
     </div>
-    <div class="alert alert-danger" role="alert" id="danger">
+    <div class="alert alert-danger" id="danger">
         You have to fill out the form ❗
     </div>
 </div>
