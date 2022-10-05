@@ -1,6 +1,7 @@
 # trashy by Tobias Karuth (for cs50 final project)
 
 import os
+
 from cs50 import SQL
 from flask import Flask, redirect, render_template, request, session
 from flask_session import Session
@@ -54,7 +55,7 @@ def index():
         return redirect("/") 
 
     else:
-        return redirect("index.html")
+        return render_template("index.html")
 
 @app.route("/what_we_do")
 def what_we_do():
