@@ -7,17 +7,14 @@
 
 {% block main %}
 <!-- TODO the links and look -->
-<nav class="navbar navbarsticky-top bg-dark mb-3">
+<nav class="navbar sticky-top bg-dark mb-3">
     <div class="container-fluid">
-      <img class="navbar-brand" href="/" src="/static/Trashy.png" style="width: 100px; height: 100px; margin: 10px;">
+      <img class="navbar-brand logo" href="/" src="/static/Trashy.png">
       <a class="navbar-text-light" href="/what_we_do">What we do</a>
       <a class="navbar-text" href="/where_we_are">The Team</a>
       <a class="navbar-item" href="/imprint">Imprint</a>
     </div>
 </nav>
-<div class="alert alert-success" role="alert">
-    Your are now registered ✔
-</div>
 <form action="/" method="post">
     <div class="row">
         <div class="mb-3">
@@ -66,6 +63,14 @@
             <label for="blue_can">Blue can</label>
         </div>
     </fieldset>
-    <button class="btn btn-success" type="submit">Submit</button>
+    <button class="btn btn-success mb-3" onclick="message()">Submit</button>
 </form>
+<div class="message">
+    <div class="alert alert-success" role="alert" id="success">
+        Your are now registered ✔
+    </div>
+    <div class="alert alert-danger" role="alert" id="danger">
+        You have to fill out the form ❗
+    </div>
+</div>
 {% endblock %}
