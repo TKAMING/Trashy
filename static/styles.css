@@ -4,13 +4,16 @@
 }
 
 body {
-    background-color: white;
     align-items: center;
 }
 
 .navbar {
     border-end-end-radius: 10px;
     border-end-start-radius: 10px;
+}
+
+.nav-link {
+    color: black;
 }
 
 .logo {
@@ -50,17 +53,27 @@ body {
 }
 
 a[href="/what_we_do"] {
-    color: white;
+
+    text-decoration: none;
 }
 
 a[href="/where_we_are"] {
-    color: white;
+
+    text-decoration: none;
 }
 
 a[href="/imprint"] {
-    color: white;
+
+    text-decoration: none;
 }
 
 a[href="/"] {
-    color: white;
+
+    text-decoration: none;
+}
+
+.photo {
+    justify-content: center;
+    height: 500px;
+    width: 430px;
 }

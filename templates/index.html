@@ -7,14 +7,31 @@
 
 {% block main %}
 <!-- TODO the look -->
-<nav class="navbar sticky-top bg-dark mb-3">
+<nav class="navbar navbar-dark bg-dark fixed-top mb-3">
     <div class="container-fluid">
       <a href="/">
-        <img class="navbar-brand logo" src="/static/Trashy.png">
+            <img class="navbar-brand logo" src="/static/Trashy.png">
       </a>
-      <a class="navbar-text-light" href="/what_we_do">What we do</a>
-      <a class="navbar-text" href="/where_we_are">The Team</a>
-      <a class="navbar-item" href="/imprint">Imprint</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body-dark">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/what_we_do">What we do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/where_we_are">The Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/imprint">Imprint</a>
+            </li>
+        </div>
+      </div>
     </div>
 </nav>
 <form action="/" method="post">
