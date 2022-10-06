@@ -110,9 +110,9 @@ a[href="/"] {
 .container div label span {
     position: relative;
     display: block;
-    background: gray;
+    background: #212529;
     padding: 10px 50px;
-    color: #555;
+    color: rgb(143, 141, 141);
     text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
     border-radius: 50px;
     font-size: 20px;
