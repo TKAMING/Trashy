@@ -18,13 +18,6 @@ body {
     height: 100px;
 }
 
-.checkbox {
-    justify-content: center;
-    align-items: center auto;
-    display: inline-block;
-    width: 180px;
-}
-
 .box {
     background-color: rgba(214, 227, 214, 0.575);
     border: none;
@@ -92,4 +85,11 @@ a[href="/imprint"] {
 a[href="/"] {
 
     text-decoration: none;
+}
+
+.checkbox {
+    justify-content: center;
+    align-items: center auto;
+    display: inline-block;
+    width: 180px;
 }
