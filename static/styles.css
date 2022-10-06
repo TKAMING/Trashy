@@ -40,7 +40,7 @@ body {
 }
 
 .form {
-    padding: 3cm;
+    padding-top: 3cm;
 }
 
 .button {
@@ -92,8 +92,4 @@ a[href="/imprint"] {
 a[href="/"] {
 
     text-decoration: none;
-}
-
-.img-thumbnail {
-    border-radius: 10px;
 }
