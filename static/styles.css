@@ -36,6 +36,10 @@ body {
     background-color: rgba(98, 178, 98, 0.457);
 }
 
+.form {
+    padding: 3cm;
+}
+
 .button {
     cursor: pointer;
 }
