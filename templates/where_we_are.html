@@ -5,7 +5,9 @@
 {% endblock %}
 
 {% block main %}
-<nav class="navbar navbar-dark bg-dark fixed-top mb-3">
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top mb-3">
+
   <div class="container-fluid">
     <a href="/">
           <img class="navbar-brand logo" src="/static/Trashy.png">
@@ -18,24 +20,23 @@
         <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body-dark">
+
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/what_we_do">What we do</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/where_we_are">The Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/imprint">Imprint</a>
-          </li>
+              <li class="nav-item"><a class="nav-link" href="/what_we_do">What we do</a></li>
+              <li class="nav-item"><a class="nav-link" href="/where_we_are">The Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="/imprint">Imprint</a></li>
+        </ul>
+        
       </div>
     </div>
   </div>
 </nav>
-<img src="/static/Photo Tobias Karuth (2).jpg" class="photo">
-<a>
-  Hi 🖐 
-  I am Tobias Karuth from Germany and this is my final project for CS50x its called Trashy and its a garbage can website.
-  and I´m the only one on the Team because ... why not.
-</a>
+
+<figure class="figure">
+  <img src="/static/Photo Tobias Karuth (2).jpg" class="figure-img img-fluid rounded">
+  <figcaption class="figure-caption">
+    Hi 🖐 I am Tobias Karuth from Germany and this is my final project for CS50x its called Trashy and its a garbage can website.and I´m the only one on the Team because ... why not.
+  </figcaption>
+</figure>
+
 {% endblock %}

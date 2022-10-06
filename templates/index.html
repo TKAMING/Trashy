@@ -6,8 +6,10 @@
 {% endblock %}
 
 {% block main %}
-<!-- TODO the look -->
-<nav class="navbar navbar-dark bg-dark fixed-top mb-3">
+<!-- TODO the look-->
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top mb-3">
+
     <div class="container-fluid">
       <a href="/">
             <img class="navbar-brand logo" src="/static/Trashy.png">
@@ -20,28 +22,25 @@
           <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body-dark">
+
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/what_we_do">What we do</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/where_we_are">The Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/imprint">Imprint</a>
-            </li>
+                <li class="nav-item"><a class="nav-link" href="/what_we_do">What we do</a></li>
+                <li class="nav-item"><a class="nav-link" href="/where_we_are">The Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="/imprint">Imprint</a></li>
+          </ul>
+          
         </div>
       </div>
     </div>
 </nav>
+
 <form action="/" method="post">
-    <div class="row">
-        <div class="mb-3">
-            <input autofocus class="form-control mx-auto w-auto" id="first_name" name="first_name" placeholder="First name" type="text">
-        </div>
-        <div class="mb-3">
-            <input class="form-control mx-auto w-auto" id="last_name" name="last_name" placeholder="Last name" type="text">
-        </div>
+
+    <div class="mb-3">
+        <input autofocus class="form-control mx-auto w-auto" id="first_name" name="first_name" placeholder="First name" type="text">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="last_name" name="last_name" placeholder="Last name" type="text">
     </div>
     <div class="mb-3">
         <input class="form-control mx-auto w-auto" id="email" name="email" placeholder="Email" type="email">
@@ -63,27 +62,31 @@
     <div class="mb-3">
         <input autocomplete="off" class="form-control mx-auto w-auto" id="house_number" name="house_number" placeholder="House Number" type="text">
     </div>
+
     <fieldset class="mb-4">
         <legend class="mb-5">Choose your Cans the Service provider has to put out</legend>
-        <div class="mb-3">
+        <div class="mb-3 checkbox">
             <input id="yellow_can" name="yellow_can" value="yellow_can" type="checkbox">
             <label for="yellow_can">Yellow can</label>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 checkbox">
             <input id="black_can" name="black_can" value="black_can" type="checkbox">
             <label for="black_can">Black can</label>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 checkbox">
             <input id="brown_can" name="brown_can" value="brown_can" type="checkbox">
             <label for="brown_can">Brown can</label>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 checkbox">
             <input id="blue_can" name="blue_can" value="blue_can" type="checkbox">
             <label for="blue_can">Blue can</label>
         </div>
     </fieldset>
+
     <button class="btn btn-success mb-3" onclick="message()" id="send">Submit</button>
+
 </form>
+
 <div class="message">
     <div class="alert alert-success" id="success">
         Your are now registered ✔
@@ -92,4 +95,5 @@
         You have to fill out the form ❗
     </div>
 </div>
+
 {% endblock %}
