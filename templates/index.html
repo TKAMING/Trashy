@@ -97,16 +97,15 @@
     </fieldset>
 
     <button class="btn btn-success mb-3" onclick="message()" id="send">Submit</button>
+    <div class="message">
+      <div class="alert alert-success success" id="success">
+          Your are now registered ✔
+      </div>
+      <div class="alert alert-danger danger" id="danger">
+          You have to fill out the form ❗
+      </div>
+    </div>
 
 </form>
-
-<div class="message">
-    <div class="alert alert-success" id="success">
-        Your are now registered ✔
-    </div>
-    <div class="alert alert-danger" id="danger">
-        You have to fill out the form ❗
-    </div>
-</div>
 
 {% endblock %}
