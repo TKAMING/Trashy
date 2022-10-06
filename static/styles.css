@@ -23,16 +23,19 @@ body {
     align-items: center auto;
     display: inline-block;
     width: 180px;
-    box-decoration-break: none; 
 }
 
 .box {
     background-color: rgba(214, 227, 214, 0.575);
-    border: none; 
+    border: none;
     appearance: none;
 }
 
 .box:hover {
+    background-color: rgba(98, 178, 98, 0.457);
+}
+
+.box:focus-within {
     background-color: rgba(98, 178, 98, 0.457);
 }
 
