@@ -25,7 +25,7 @@ A Admin pannel to manage the users with fancy graphs.
 
 
 ## Technologies used:
-Python, Flask, CS50 python library, HTML, CSS, SQLite3
+Python, Flask, CS50 python library, HTML, CSS, SQLite3, Bootstrap
 
 
 ## To Do´s
