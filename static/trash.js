@@ -1,4 +1,4 @@
-function message(){
+function message() {
     var first_name = document.getElementById("first_name");
     var last_name = document.getElementById("last_name");
     var email = document.getElementById("email");
@@ -12,6 +12,7 @@ function message(){
 
     if(first_name.value === "" || last_name.value === "" || email.value === "" || city.value === "" || state.value === "" || zip.value === "" || street.value === "" || house_number.value === "") {
         danger.style.display = "block";
+        prevent_submition();
     }
     else {
         setTimeout(() => {
@@ -33,4 +34,8 @@ function message(){
         danger.style.display = "none";
         success.style.display = "none";
     }, 4000);
+}
+
+function prevent_submition() {
+    event.preventDefault();
 }
