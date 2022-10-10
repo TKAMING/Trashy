@@ -36,36 +36,28 @@
 <form action="/" method="post" class="form">
 
     <div class="mb-3 wrapper">
-        <input autocomplete="off" autofocus id="first_name" name="first_name" type="text">
-        <label for="first_name">First name</label>
+        <input autocomplete="off" autofocus placeholder="First name" id="first_name" name="first_name" type="text">
     </div>
     <div class="mb-3 wrapper">
-        <input autocomplete="off" id="last_name" name="last_name" type="text">
-        <label for="last_name">Last name</label>
+        <input autocomplete="off" placeholder="Last name" id="last_name" name="last_name" type="text">
     </div>
     <div class="mb-3 wrapper">
-        <input autocomplete="off" id="email" name="email" type="email">
-        <label for="email">E-mail</label>
+        <input autocomplete="off" placeholder="E-mail" id="email" name="email" type="email">
     </div>
     <div class="mb-3 wrapper">
-      <input autocomplete="off" aria-label="City" id="city" name="city" type="text">
-      <label for="city">City</label>
+      <input autocomplete="off" placeholder="City" aria-label="City" id="city" name="city" type="text">
     </div>
     <div class="mb-3 wrapper">
-      <input autocomplete="off" aria-label="State" id="state" name="state" type="text">
-      <label for="state">State</label>
+      <input autocomplete="off" placeholder="State" aria-label="State" id="state" name="state" type="text">
+    </div> 
+    <div class="mb-3 wrapper">
+      <input autocomplete="off" placeholder="Zip" aria-label="Zip" id="zip" name="zip" type="text">
     </div>
     <div class="mb-3 wrapper">
-      <input autocomplete="off" aria-label="Zip" id="zip" name="zip" type="text">
-      <label for="zip">Zip</label>
+        <input autocomplete="off" placeholder="Street" id="street" name="street" type="text">
     </div>
     <div class="mb-3 wrapper">
-        <input autocomplete="off" id="street" name="street" type="text">
-        <label for="street">Street</label>
-    </div>
-    <div class="mb-3 wrapper">
-        <input autocomplete="off" id="house_number" name="house_number" type="text">
-        <label for="house_number">House number</label>
+        <input autocomplete="off" placeholder="House number" id="house_number" name="house_number" type="text">
     </div>
 
     <fieldset class="mb-4">
@@ -102,8 +94,11 @@
   
         </div>
     </fieldset>
+    <div class="mb-3 message-box">
+      <input autocomplete="off" placeholder="Extra message to the Service provider" aria-label="msg" id="msg" name="msg" type="text" rows="10">
+    </div>
 
-    <button class="btn btn-success mb-3" onclick="message()" id="send">Submit</button>
+    <button class="btn btn-success mb-3" onclick="message()" id="send" type="submit">Submit</button>
     <div class="message">
       <div class="alert alert-success success" id="success">
           Your are now registered ✔

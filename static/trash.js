@@ -7,6 +7,7 @@ function message() {
     var zip = document.getElementById("zip");
     var street = document.getElementById("street");
     var house_number = document.getElementById("house_number");
+    var msg = document.getElementById("msg");
     const success = document.getElementById("success");
     const danger = document.getElementById("danger");
 
@@ -24,6 +25,7 @@ function message() {
             zip.value = "";
             street.value = "";
             house_number.value = "";
+            msg.value = "";
         }, 2000);
 
         success.style.display = "block";

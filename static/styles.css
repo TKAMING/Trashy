@@ -125,6 +125,7 @@ a[href="/"] {
 }
 
 .wrapper input {
+    background: rgba(98, 178, 98, 0.457);
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
@@ -132,19 +133,27 @@ a[href="/"] {
     font-weight: 400;
     line-height: 1.5;
     appearance: none;
+    border: none;
     border-radius: 5px;
 }
 
-.wrapper label {
-    position: relative;
+.wrapper input:focus-within {
+    border: solid #212529;
+}
+
+.message-box input{
+    background: rgba(98, 178, 98, 0.457);
     display: block;
-    background: #212529;
-    padding: 10px 50px;
-    color: rgb(143, 141, 141);
-    text-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    width: 100%;
+    height: ;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none;
     border-radius: 5px;
-    font-size: 20px;
-    transition: 0.5s;
-    user-select: none;
-    overflow: hidden;
+}
+
+.message-box input:focus-within {
+    border: solid #212529;
 }

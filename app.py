@@ -45,10 +45,11 @@ def index():
         black_can = request.form.get("black_can") 
         brown_can = request.form.get("brown_can") 
         blue_can = request.form.get("blue_can")
+        msg = request.form.get("msg")
 
         # inserts the user in the db 
-        db.execute("INSERT INTO users ( first_name, last_name, email, city, state, zip, street, house_number, yellow_can, black_can, brown_can, blue_can ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );"
-        , first_name, last_name, email, city, state, zip, street, house_number,yellow_can, black_can, brown_can, blue_can)
+        db.execute("INSERT INTO users ( first_name, last_name, email, city, state, zip, street, house_number, yellow_can, black_can, brown_can, blue_can, msg ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );"
+        , first_name, last_name, email, city, state, zip, street, house_number,yellow_can, black_can, brown_can, blue_can, msg)
 
         return redirect("/") 
 
