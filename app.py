@@ -47,7 +47,8 @@ def index():
         blue_can = request.form.get("blue_can")
         etra_message = request.form.get("msg")
 
-        # inserts the user in the db 
+        # inserts the user in the db
+        # TODO message box + email required 
         db.execute("INSERT INTO users ( first_name, last_name, email, city, state, zip, street, house_number, yellow_can, black_can, brown_can, blue_can, extra_message ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );"
         , first_name, last_name, email, city, state, zip, street, house_number,yellow_can, black_can, brown_can, blue_can, extra_message)
 
