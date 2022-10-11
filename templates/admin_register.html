@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+
+    <div class="container-fluid">
+      <a href="/">
+            <img class="navbar-brand logo" src="/static/Trashy.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body-dark">
+
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item px-3"><a class="nav-link" href="/what_we_do">What we do</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="/where_we_are">The Team</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="/imprint">Imprint</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="/admin/register">How to be a servive provider</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="/admin">Admin pannel</a></li>
+                <li class="nav-item px-3"><a class="nav-link" href="/admin/login">Log in</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+</nav>
+
+<h1 class="form">So ... you want to be an Admin / Service provider? Just fill out the form</h1>
+
+<form action="/admin/register" method="post" class="form">
+
+    <div class="mb-3 wrapper">
+        <input autocomplete="off" autofocus required placeholder="Username" id="username" name="username" type="text">
+    </div>
+    <div class="mb-3 wrapper">
+        <input autocomplete="off" required placeholder="Password" id="password" name="password" type="password">
+    </div>
+    <div class="mb-3 wrapper">
+        <input autocomplete="off" required placeholder="Confirm Password" id="confirm" name="confirm" type="password">
+    </div>
+    <div class="mb-3 wrapper">
+        <input autocomplete="off" required placeholder="E-mail" id="admin_email" name="admin_email" type="email">
+    </div>
+    <button class="btn btn-success mb-3" onclick="message_register_admin()" id="send" type="submit">Register</button>
+    <div class="message">
+        <div class="alert alert-success success" id="success">
+            Your are now registered as an Admin / Service provider ✔
+        </div>
+        <div class="alert alert-danger danger" id="danger">
+            You have to fill out the form to be a Admin ❗
+        </div>
+      </div>
+
+</form>
+
+{% endblock %}

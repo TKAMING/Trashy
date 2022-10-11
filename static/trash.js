@@ -38,6 +38,34 @@ function message() {
     }, 4000);
 }
 
+function message_register_admin() {
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+    var confirm = document.getElementById("confirm");
+    var admin_email = document.getElementById("admin_email");
+
+    if (username.value === "" || password.value === "" || confirm.value === "" || admin_email.value === "") {
+        danger.style.display = "block";
+        prevent_submition();
+    }
+
+    else {
+        setTimeout(() => {
+            username.value = "";
+            password.value = "";
+            confirm.value = "";
+            admin_email.value = "";
+        }, 2000);
+
+        success.style.display = "block";
+    }
+
+    setTimeout(() => {
+        danger.style.display = "none";
+        success.style.display = "none";
+    }, 4000);
+}
+
 function prevent_submition() {
     event.preventDefault();
 }
