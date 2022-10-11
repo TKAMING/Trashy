@@ -35,7 +35,7 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap
 🟢 User page (/)
     - for the user´s to submit the services the Service provider (Admin) has to offer for  them
 
-🔴 what we do page
+🟢 what we do page
     - with the newest events from Trashy
 
 🟢 where we are 
