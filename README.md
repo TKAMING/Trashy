@@ -38,7 +38,7 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap
 🔴 what we do page
     - with the newest events from Trashy
 
-🔴 where we are 
+🟢 where we are 
     - with our Team
 
 🟢 Impressum

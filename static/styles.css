@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(214, 227, 214, 0.548);
+    background-color: #d6e3d68c;
 }
 
 .navbar {
@@ -167,4 +167,13 @@ a[href="/"] {
 .message-box input:focus-within {
     background: rgba(98, 178, 98, 0.457);
     border: solid #212529;
+}
+
+.photo-logo {
+    width: 75%;
+    max-width: 15cm;
+}
+
+.photo-team {
+    width: 100%;
 }
