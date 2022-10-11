@@ -32,9 +32,8 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap
 🔴 = NOT done
 🟢 = done
 
-🔴 User page (/)
+🟢 User page (/)
     - for the user´s to submit the services the Service provider (Admin) has to offer for  them
-        - 🔴 place add
 
 🔴 what we do page
     - with the newest events from Trashy
@@ -42,7 +41,7 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap
 🔴 where we are 
     - with our Team
 
-🔴 Impressum
+🟢 Impressum
 
 🔴 Admin login
     - to see the admin pannel
