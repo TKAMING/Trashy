@@ -44,7 +44,7 @@ function message_register_admin() {
     var confirm = document.getElementById("confirm");
     var admin_email = document.getElementById("admin_email");
 
-    if (username.value === "" || password.value === "" || confirm.value === "" || admin_email.value === "") {
+    if (username.value === "" || password.value === "" || confirm.value === "") {
         danger.style.display = "block";
         prevent_submition();
     }
@@ -65,6 +65,32 @@ function message_register_admin() {
         success.style.display = "none";
     }, 4000);
 }
+
+function message_login_admin() {
+    var login_username = document.getElementById("username");
+    var login_password = document.getElementById("password");
+
+    if (login_username.value === "" || login_password.value === "") {
+        danger.style.display = "block";
+        prevent_submition();
+    }
+
+    else {
+        setTimeout(() => {
+            login_username.value = "";
+            login_password.value = "";
+        }, 2000);
+
+        success.style.display = "block";
+    }
+
+    setTimeout(() => {
+        danger.style.display = "none";
+        success.style.display = "none";
+    }, 4000);
+
+}
+
 
 function prevent_submition() {
     event.preventDefault();

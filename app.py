@@ -65,7 +65,6 @@ def index():
         extra_message = request.form.get("msg")
 
         # inserts the user in the db
-        # TODO message box + email required 
         db.execute("INSERT INTO users ( first_name, last_name, email, city, state, zip, street, house_number, yellow_can, black_can, brown_can, blue_can, extra_message ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );"
         , first_name, last_name, email, city, state, zip, street, house_number,yellow_can, black_can, brown_can, blue_can, extra_message)
 
@@ -100,14 +99,6 @@ def admin_login():
 
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
-
-        # Ensure username was submitted
-        if not request.form.get("username"):
-            return apology("Must provide username", 400)
-
-        # Ensure password was submitted
-        elif not request.form.get("password"):
-            return apology("Must provide password", 400)
 
         # Query database for username
         rows = db.execute("SELECT * FROM admins WHERE username = ?", request.form.get("username"))
