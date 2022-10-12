@@ -1,6 +1,7 @@
 # trashy by Tobias Karuth (for cs50 final project)
 
 import os
+from sqlite3 import dbapi2
 
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
@@ -86,10 +87,17 @@ def imprint():
 
 # admin pages
 
+# to store admin username in global var for profilepicture (uncomment if the website is hosted and has http)
+#if app.route("/admin/login"):
+#    admin_username = request.form.get("username")
+
+# comment this out if you are using http 
+admin_username = "TK"
+
 @app.route("/admin", methods=["GET", "POST"])
 @login_required
 def admin_pannel():
-    return render_template("admin_pannel.html")
+    return render_template("admin_pannel.html", avatar=admin_username)
 
 @app.route("/admin/login", methods=["GET", "POST"])
 def admin_login():

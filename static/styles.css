@@ -177,3 +177,22 @@ a[href="/"] {
 .photo-team {
     width: 100%;
 }
+
+.avatar {
+    margin-top: 2cm;
+    margin-left: 93%;
+    font-size: 16px;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: #212529;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar::after {
+    content: attr(data-label);
+    font-family: sans-serif;
+    color: white;
+}
