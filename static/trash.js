@@ -95,3 +95,43 @@ function message_login_admin() {
 function prevent_submition() {
     event.preventDefault();
 }
+
+// for the chart 
+const labels = ["Yellow can", "Black can", "Brown can", "Blue can"];
+const data = {
+    labels: labels,
+    datasets: [{
+      label: 'How many cans from wich color to put out.',
+      data: [6, 1, 5, 3],
+      backgroundColor: [
+        'rgba(255, 205, 86, 0.2)',
+        'rgba(26, 26, 26, 0.2)',
+        'rgba(66, 33, 0, 0.2)',
+        'rgba(54, 162, 235, 0.2)'
+      ],
+      borderColor: [
+        'rgb(255, 205, 86)',
+        'rgb(26, 26, 26)',
+        'rgb(66, 33, 0)',
+        'rgb(54, 162, 235)'
+      ],
+      borderWidth: 1
+    }]
+};
+
+const config = {
+  type: 'bar',
+  data: data,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  },
+};
+
+const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );

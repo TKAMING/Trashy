@@ -97,7 +97,19 @@ admin_username = "TK"
 @app.route("/admin", methods=["GET", "POST"])
 @login_required
 def admin_pannel():
-    return render_template("admin_pannel.html", avatar=admin_username)
+    yellow_can_amount = db.execute("SELECT COUNT(yellow_can) FROM users WHERE yellow_can = yellow_can;")
+    black_can_amount = db.execute("SELECT COUNT(black_can) FROM users WHERE black_can = black_can;")
+    brown_can_amount = db.execute("SELECT COUNT(brown_can) FROM users WHERE brown_can = brown_can;")
+    blue_can_amount = db.execute("SELECT COUNT(blue_can) FROM users WHERE blue_can = blue_can;")
+
+    total_can_amount = yellow_can_amount + black_can_amount + brown_can_amount + blue_can_amount
+
+    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 1;", yellow_can_amount)
+    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 2;", black_can_amount)
+    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 3;", brown_can_amount)
+    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 4;", blue_can_amount)
+
+    return render_template("admin_pannel.html", avatar=admin_username, can_amount=total_can_amount)
 
 @app.route("/admin/login", methods=["GET", "POST"])
 def admin_login():

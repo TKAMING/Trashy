@@ -196,3 +196,20 @@ a[href="/"] {
     font-family: sans-serif;
     color: white;
 }
+
+.chart {
+    width: 70%;
+    padding: 1cm;
+}
+
+.box {
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(69, 69, 69);
+    filter: blur(px);
+}
