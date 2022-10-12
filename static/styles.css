@@ -147,7 +147,7 @@ a[href="/"] {
     border: solid #212529;
 }
 
-.message-box input{
+.message-box textarea{
     background: rgba(214, 227, 214, 0.575);
     display: block;
     width: 100%;
@@ -159,12 +159,12 @@ a[href="/"] {
     border-radius: 5px;
 }
 
-.message-box input:hover {
+.message-box textarea:hover {
     background: rgba(98, 178, 98, 0.457);
     border-radius: 5px;
 }
 
-.message-box input:focus-within {
+.message-box textarea:focus-within {
     background: rgba(98, 178, 98, 0.457);
     border: solid #212529;
 }

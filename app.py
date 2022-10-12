@@ -45,7 +45,6 @@ def secure_password(contra):
     else:
         return 1
 
-# TODO different routs to add 
 
 @app.route("/", methods=["GET", "POST"])
 def index():

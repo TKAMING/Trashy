@@ -5,7 +5,9 @@
 {% endblock %}
 
 {% block main %}
-    <!-- https://memegen.link/ -->
-    # TODO add different photo
-    <img alt="{{ top }}" class="border img-fluid" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://starecat.com/content/wp-content/uploads/not-stonks-stock-market-meme-red-prices-falling.jpg" title="{{ top }}">
+
+    <img src="/static/Trashy.png" class="photo-logo">
+    <h2 alt="{{ top }}" class="img-fluid" title="{{ top }}">Error: {{ top }}</h2>
+    <h1 alt="{{ bottom }}" class="img-fluid" title="{{ bottom }}">{{ bottom }}</h1>
+
 {% endblock %}
