@@ -213,3 +213,25 @@ a[href="/"] {
     box-shadow: 0 2px 20px rgb(69, 69, 69);
     filter: blur(px);
 }
+
+.table-responsive {
+    width: 90%;
+    display: inline-flexbox;
+    padding: 1cm;
+    margin: 1cm;
+}
+
+.box-table {
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    padding: 0.7cm;
+    margin-bottom: 0.8cm;
+    background: white;
+    z-index: -2;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgb(69, 69, 69);
+    filter: blur(px);
+    align-items: center;
+}

@@ -17,6 +17,7 @@ app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 # Configure session to use filesystem (instead of signed cookies)
+app.config["SESSION_FILE_DIR"] = mkdtemp()
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
@@ -46,6 +47,7 @@ def secure_password(contra):
     else:
         return 1
 
+#  ---------------------------------    USERFORM PAGE    -----------------------------------
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -73,19 +75,25 @@ def index():
     else:
         return render_template("index.html")
 
+#  ---------------------------------    WHAT WE DO PAGE    -----------------------------------
+
 @app.route("/what_we_do")
 def what_we_do():
     return render_template("what_we_do.html")
+
+#  ---------------------------------    THE TEAM PAGE    -----------------------------------
 
 @app.route("/where_we_are")
 def where_we_are():
     return render_template("where_we_are.html")
 
+#  ---------------------------------    IMPRINT PAGE    -----------------------------------
+
 @app.route("/imprint")
 def imprint():
     return render_template("imprint.html")
 
-# admin pages
+#  ---------------------------------    ADMIN PAGES    -----------------------------------
 
 # to store admin username in global var for profilepicture (uncomment if the website is hosted and has http)
 #if app.route("/admin/login"):
@@ -94,9 +102,13 @@ def imprint():
 # comment this out if you are using http 
 admin_username = "TK"
 
+#  ---------------------------------    ADMIN PAGE    -----------------------------------
+
 @app.route("/admin", methods=["GET", "POST"])
 @login_required
 def admin_pannel():
+
+    # get the can amount to display for the graph
     yellow_can_amount = db.execute("SELECT COUNT(yellow_can) FROM users WHERE yellow_can = yellow_can;")
     black_can_amount = db.execute("SELECT COUNT(black_can) FROM users WHERE black_can = black_can;")
     brown_can_amount = db.execute("SELECT COUNT(brown_can) FROM users WHERE brown_can = brown_can;")
@@ -109,7 +121,12 @@ def admin_pannel():
     #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 3;", brown_can_amount)
     #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 4;", blue_can_amount)
 
-    return render_template("admin_pannel.html", avatar=admin_username, can_amount=total_can_amount)
+    # get the data from db for the table on the admin pannel
+    users = db.execute("SELECT * FROM users;")
+
+    return render_template("admin_pannel.html", avatar=admin_username, can_amount=total_can_amount, users=users)
+
+#  ---------------------------------    ADMIN LOGIN PAGE    -----------------------------------
 
 @app.route("/admin/login", methods=["GET", "POST"])
 def admin_login():
@@ -135,6 +152,8 @@ def admin_login():
     # User reached route via GET (as by clicking a link or via redirect)
     else:
         return render_template("admin_login.html")
+
+#  ---------------------------------    ADMIN REGISTER PAGE    -----------------------------------        
 
 @app.route("/admin/register", methods=["GET", "POST"])
 def admin_register():
@@ -184,6 +203,8 @@ def admin_register():
     # here we render the register page when a get method is pass
     else:
         return render_template("admin_register.html")
+
+#  ---------------------------------    ADMIN LOGOUT    -----------------------------------
 
 @app.route("/admin/logout")
 def admin_logout():

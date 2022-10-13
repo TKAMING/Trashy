@@ -39,9 +39,48 @@
 
 <img class="photo-logo" src="/static/Trashy.png">
 
+<div class="box-table">
+    <table class="table table-bordered table-hover table-responsive">
+      <thead class="table-dark">
+            <tr>
+              <th scope="col">Firstname</th>
+              <th scope="col">Lastname</th>
+              <th scope="col">E-mail</th>
+              <th scope="col">City</th>
+              <th scope="col">Zip</th>
+              <th scope="col">Steet</th>
+              <th scope="col">House number</th>
+              <th scope="col">Yellow can</th>
+              <th scope="col">Black can</th>
+              <th scope="col">Brown can</th>
+              <th scope="col">Blue can</th>
+              <th scope="col">Extra Message</th>
+            </tr>
+      </thead>
+      <tbody>
+          {% for users in users %}
+              <tr>
+                  <td>{{ users.first_name }}</td>
+                  <td>{{ users.last_name }}</td>
+                  <td>{{ users.email }}</td>
+                  <td>{{ users.city }}</td>
+                  <td>{{ users.zip }}</td>
+                  <td>{{ users.street }}</td>
+                  <td>{{ users.house_number }}</td>
+                  <td>{{ users.yellow_can }}</td>
+                  <td>{{ users.black_can }}</td>
+                  <td>{{ users.brown_can }}</td>
+                  <td>{{ users.blue_can }}</td>
+                  <td>{{ users.extra_message }}</td>
+              </tr> 
+          {% endfor %}
+      </tbody>
+    </table>
+</div>
+
 <div class="box">
   <canvas id="myChart" class="chart"></canvas>
-  <p style="padding: 0.5cm;">Total cans: {{ cans_amount }}</p>
+  <p style="padding: 0.5cm;">Total cans: {{ chart.amount }}</p>
 </div>
 
 {% endblock %}
