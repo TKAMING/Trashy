@@ -46,7 +46,7 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, C
 
 🟢 Impressum
 
-🔴 Admin login
+🟢 Admin login
     - to see the admin pannel
 
 🔴 Admin register
