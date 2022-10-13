@@ -1,4 +1,4 @@
-# <img width="728" src="/static/Trashy_logo.png" alt="Logo"></a> (CS50-Final-Project)
+# <img width="100px" height="100px" src="/static/Trashy_logo.png" alt="Logo"></a> (CS50-Final-Project)
 Trashy is a website to manage garbage cans. 
 You can get a account as an admin and provide via Trashy a service for your neighbourhood.
 Then your neighbours can go to the Trashy website fill out the form which cans you have to put out and where.
