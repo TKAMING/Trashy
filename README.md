@@ -18,7 +18,7 @@ Go to
 
 And fill out the form
 
-    
+<img width="728" style="border-radius:10px" src="/static/trashy_admin_register.png" alt="Demo"></a>
 
 ## Extras for the Service Provider
 A Admin pannel to manage the users with fancy graphs.
