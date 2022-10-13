@@ -114,17 +114,17 @@ def admin_pannel():
     brown_can_amount = db.execute("SELECT COUNT(brown_can) FROM users WHERE brown_can = brown_can;")
     blue_can_amount = db.execute("SELECT COUNT(blue_can) FROM users WHERE blue_can = blue_can;")
 
-    total_can_amount = yellow_can_amount + black_can_amount + brown_can_amount + blue_can_amount
+    can_amount = yellow_can_amount + black_can_amount + brown_can_amount + blue_can_amount
 
-    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 1;", yellow_can_amount)
-    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 2;", black_can_amount)
-    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 3;", brown_can_amount)
-    #db.execute("INSERT INTO chart ( amount ) VALUES ( ? ) WHERE id = 4;", blue_can_amount)
+    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(yellow_can) FROM users;")
+    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(black_can) FROM users;")
+    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(brown_can) FROM users;")
+    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(blue_can) FROM users;")
 
     # get the data from db for the table on the admin pannel
     users = db.execute("SELECT * FROM users;")
 
-    return render_template("admin_pannel.html", avatar=admin_username, can_amount=total_can_amount, users=users)
+    return render_template("admin_pannel.html", avatar=admin_username, can_amount=can_amount, users=users)
 
 #  ---------------------------------    ADMIN LOGIN PAGE    -----------------------------------
 

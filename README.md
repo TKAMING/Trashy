@@ -18,7 +18,7 @@ Go to
 
 And fill out the form
 
-    TODO
+    
 
 ## Extras for the Service Provider
 A Admin pannel to manage the users with fancy graphs.

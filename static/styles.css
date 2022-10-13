@@ -179,6 +179,7 @@ a[href="/"] {
 }
 
 .avatar {
+    content: "";
     margin-top: 2cm;
     margin-left: 93%;
     font-size: 16px;
@@ -236,12 +237,12 @@ a[href="/"] {
     align-items: center;
 }
 
-.ahh-grey {
-    background-color: rgba(26, 26, 26);
-    color: white;
+.table-grey {
+    background-color: rgba(26, 26, 26, 0,2);
+    color: rgb(255, 255, 255);
 }
 
-.ahh-brown {
-    background-color: rgba(66, 33, 0);
-    color: white;
+.table-brown {
+    background-color: rgba(66, 33, 0, 0,2);
+    color: rgb(255, 255, 255);
 }
