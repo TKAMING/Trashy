@@ -18,7 +18,8 @@ Go to
 
 And fill out the form
 
-    TODO
+    ![trashy_admin_register](https://user-images.githubusercontent.com/98485613/195669053-5675858b-ada4-4556-9651-7c08f3ab3605.png)
+
 
 ## Extras for the Service Provider
 A Admin pannel to manage the users with fancy graphs.
