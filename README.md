@@ -18,7 +18,7 @@ Go to
 
 And fill out the form
 
-    ![trashy_admin_register](https://user-images.githubusercontent.com/98485613/195669053-5675858b-ada4-4556-9651-7c08f3ab3605.png)
+<img width="728" style="border-radius:10px" src="/static/trashy_admin_register.png" alt="Demo"></a>
 
 
 ## Extras for the Service Provider
