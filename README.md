@@ -23,6 +23,8 @@ And fill out the form
 ## Extras for the Service Provider
 A Admin pannel to manage the users with fancy graphs.
 
+    TODO add photo with admin pannel
+
 
 ## Technologies used:
 Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, Chart.js
