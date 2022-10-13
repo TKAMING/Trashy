@@ -235,3 +235,13 @@ a[href="/"] {
     filter: blur(px);
     align-items: center;
 }
+
+.ahh-grey {
+    background-color: rgba(26, 26, 26);
+    color: white;
+}
+
+.ahh-brown {
+    background-color: rgba(66, 33, 0);
+    color: white;
+}

@@ -41,7 +41,7 @@
 
 <div class="box-table">
     <table class="table table-bordered table-hover table-responsive">
-      <thead class="table-dark">
+      <thead class="table-light">
             <tr>
               <th scope="col">Firstname</th>
               <th scope="col">Lastname</th>
@@ -50,10 +50,10 @@
               <th scope="col">Zip</th>
               <th scope="col">Steet</th>
               <th scope="col">House number</th>
-              <th scope="col">Yellow can</th>
-              <th scope="col">Black can</th>
-              <th scope="col">Brown can</th>
-              <th scope="col">Blue can</th>
+              <th scope="col" class="table-warning">Yellow can</th>
+              <th scope="col" class="ahh-grey">Black can</th>
+              <th scope="col" class="ahh-brown">Brown can</th>
+              <th scope="col" class="table-primary">Blue can</th>
               <th scope="col">Extra Message</th>
             </tr>
       </thead>
@@ -67,10 +67,10 @@
                   <td>{{ users.zip }}</td>
                   <td>{{ users.street }}</td>
                   <td>{{ users.house_number }}</td>
-                  <td>{{ users.yellow_can }}</td>
-                  <td>{{ users.black_can }}</td>
-                  <td>{{ users.brown_can }}</td>
-                  <td>{{ users.blue_can }}</td>
+                  <td class="table-warning">{{ users.yellow_can }}</td>
+                  <td class="ahh-grey">{{ users.black_can }}</td>
+                  <td class="ahh-brown">{{ users.brown_can }}</td>
+                  <td class="table-primary">{{ users.blue_can }}</td>
                   <td>{{ users.extra_message }}</td>
               </tr> 
           {% endfor %}
@@ -80,7 +80,7 @@
 
 <div class="box">
   <canvas id="myChart" class="chart"></canvas>
-  <p style="padding: 0.5cm;">Total cans: {{ chart.amount }}</p>
+  <p style="padding: 0.5cm;">Total cans: {{ total_can_amount }}</p>
 </div>
 
 {% endblock %}
