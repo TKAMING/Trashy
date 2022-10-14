@@ -50,10 +50,10 @@
               <th scope="col">Zip</th>
               <th scope="col">Steet</th>
               <th scope="col">House number</th>
-              <th scope="col" class="table-warning">Yellow can</th>
-              <th scope="col" class="table-grey">Black can</th>
-              <th scope="col" class="table-brown">Brown can</th>
-              <th scope="col" class="table-primary">Blue can</th>
+              <th scope="col">Yellow can</th>
+              <th scope="col">Black can</th>
+              <th scope="col">Brown can</th>
+              <th scope="col">Blue can</th>
               <th scope="col">Extra Message</th>
             </tr>
       </thead>
@@ -67,10 +67,10 @@
                   <td>{{ users.zip }}</td>
                   <td>{{ users.street }}</td>
                   <td>{{ users.house_number }}</td>
-                  <td class="table-warning">{{ users.yellow_can }}</td>
-                  <td class="table-grey">{{ users.black_can }}</td>
-                  <td class="table-brown">{{ users.brown_can }}</td>
-                  <td class="table-primary">{{ users.blue_can }}</td>
+                  <td>{{ users.yellow_can }}</td>
+                  <td>{{ users.black_can }}</td>
+                  <td>{{ users.brown_can }}</td>
+                  <td>{{ users.blue_can }}</td>
                   <td>{{ users.extra_message }}</td>
               </tr> 
           {% endfor %}
@@ -80,7 +80,53 @@
 
 <div class="box">
   <canvas id="myChart" class="chart"></canvas>
-  <p style="padding: 0.5cm;">Total cans: {{ can_amount }}</p>
+  <p style="padding: 0.5cm;">Total cans: {{ sumed_can_amounts }}</p>
 </div>
+
+
+<script>
+
+      let differend_can_amount = JSON.parse({{ differend_can_amount }})
+      // for the chart 
+      const labels = ["Yellow can", "Black can", "Brown can", "Blue can"];
+      const data = {
+          labels: labels,
+          datasets: [{
+            label: 'How many cans from wich color to put out.',
+            data: differend_cans,
+            backgroundColor: [
+              'rgba(255, 205, 86, 0.2)',
+              'rgba(26, 26, 26, 0.2)',
+              'rgba(66, 33, 0, 0.2)',
+              'rgba(54, 162, 235, 0.2)'
+            ],
+            borderColor: [
+              'rgb(255, 205, 86)',
+              'rgb(26, 26, 26)',
+              'rgb(66, 33, 0)',
+              'rgb(54, 162, 235)'
+            ],
+            borderWidth: 1
+          }]
+      };
+    
+      const config = {
+        type: 'bar',
+        data: data,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        },
+      };
+    
+      const myChart = new Chart(
+          document.getElementById('myChart'),
+          config
+        );
+    
+</script>
 
 {% endblock %}

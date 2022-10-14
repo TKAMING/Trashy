@@ -217,7 +217,6 @@ a[href="/"] {
 
 .table-responsive {
     width: 90%;
-    display: inline-flexbox;
     padding: 1cm;
     margin: 1cm;
 }
