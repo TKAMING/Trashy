@@ -1,3 +1,4 @@
+<img width="200px" height="200px" src="/static/Trashy.png" alt="Logo"></a>                                                               
 # Trashy (CS50-Final-Project)
 Trashy is a website to manage garbage cans. 
 You can get a account as an admin and provide via Trashy a service for your neighbourhood.
@@ -18,10 +19,10 @@ Go to
 
 And fill out the form
 
-<img width="728" style="border-radius:10px" src="/static/trashy_admin_register.png" alt="Demo"></a>
+<img width="728" style="border-radius:10px" src="/static/trashy_admin_register.png" alt="Demo register"></a>
 
 ## Extras for the Service Provider
-A Admin pannel to manage the users with fancy graphs.
+A Admin pannel to manage the users with graphs.
 
     TODO add photo with admin pannel
 
@@ -43,17 +44,17 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, C
 🟢 where we are 
     - with our Team
 
-🟢 Impressum
+🟢 Imprint
 
-🔴 Admin login
+🟢 Admin login
     - to see the admin pannel
 
-🔴 Admin register
+🟢 Admin register
     🔴 Feature to create differents Admin´s (maybe with sessions)
 
 🔴 Admin pannel
-    🔴 Graphs
-    🔴 a table with all the registered users for this admin
+    🟠 Graphs
+    🟢 a table with all the registered users for this admin
     🔴 log file data
         - Different page
 
