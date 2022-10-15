@@ -28,14 +28,13 @@
                 <li class="nav-item px-3"><a class="nav-link" href="/admin">Admin pannel</a></li>
                 <li class="nav-item px-3"><a class="nav-link" href="/admin/register">Register</a></li>
                 <li class="nav-item px-3"><a class="nav-link" href="/admin/logout">Log out</a></li>
+                <li class="nav-item px-3"><div class="avatar" data-label="{{ avatar }}"></div></li>
           </ul>
           
         </div>
       </div>
     </div>
 </nav>
-
-<div class="avatar" data-label="{{ avatar }}"></div>
 
 <img class="photo-logo" src="/static/Trashy.png">
 
@@ -79,21 +78,20 @@
 </div>
 
 <div class="box">
-  <canvas id="myChart" class="chart"></canvas>
+  <canvas id="can_chart" class="chart"></canvas>
   <p style="padding: 0.5cm;">Total cans: {{ sumed_can_amounts }}</p>
 </div>
 
 
 <script>
-
-      let differend_can_amount = JSON.parse({{ differend_can_amount }})
+      
       // for the chart 
       const labels = ["Yellow can", "Black can", "Brown can", "Blue can"];
       const data = {
           labels: labels,
           datasets: [{
             label: 'How many cans from wich color to put out.',
-            data: differend_cans,
+            data: {{ differend_can_amounts | safe }},
             backgroundColor: [
               'rgba(255, 205, 86, 0.2)',
               'rgba(26, 26, 26, 0.2)',
@@ -122,8 +120,8 @@
         },
       };
     
-      const myChart = new Chart(
-          document.getElementById('myChart'),
+      const can_chart = new Chart(
+          document.getElementById('can_chart'),
           config
         );
     

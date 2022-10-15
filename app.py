@@ -110,33 +110,29 @@ admin_username = "TK"
 def admin_pannel():
 
     # get the can amount to display for the graph
-    yellow_can_amount = db.execute("SELECT COUNT(yellow_can) FROM users WHERE yellow_can = yellow_can;")
-    black_can_amount = db.execute("SELECT COUNT(black_can) FROM users WHERE black_can = black_can;")
-    brown_can_amount = db.execute("SELECT COUNT(brown_can) FROM users WHERE brown_can = brown_can;")
-    blue_can_amount = db.execute("SELECT COUNT(blue_can) FROM users WHERE blue_can = blue_can;")
+    yellow_can_amount_unformatted = db.execute("SELECT COUNT(yellow_can) FROM users WHERE yellow_can = yellow_can;")
+    yellow_can_amount_dict = yellow_can_amount_unformatted[0]
+    yellow_can_amount = yellow_can_amount_dict['COUNT(yellow_can)']
 
-    # maybe for the graph 
-    # INSERT INTO chart (yellow_can_amount) VALUES (SELECT COUNT(yellow_can) FROM users WHERE yellow_can = yellow_can);
+    black_can_amount_unformatted = db.execute("SELECT COUNT(black_can) FROM users WHERE black_can = black_can;")
+    black_can_amount_dict = black_can_amount_unformatted[0]
+    black_can_amount = black_can_amount_dict['COUNT(black_can)']
 
+    brown_can_amount_unformatted = db.execute("SELECT COUNT(brown_can) FROM users WHERE brown_can = brown_can;")
+    brown_can_amount_dict = brown_can_amount_unformatted[0]
+    brown_can_amount = brown_can_amount_dict['COUNT(brown_can)']
+
+    blue_can_amount_unformatted = db.execute("SELECT COUNT(blue_can) FROM users WHERE blue_can = blue_can;")
+    blue_can_amount_dict = blue_can_amount_unformatted[0]
+    blue_can_amount = blue_can_amount_dict['COUNT(blue_can)']
+
+    differend_can_amounts = [yellow_can_amount, black_can_amount, brown_can_amount, blue_can_amount]
     sumed_can_amounts = yellow_can_amount + black_can_amount + brown_can_amount + blue_can_amount
 
-    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(yellow_can) FROM users;")
-    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(black_can) FROM users;")
-    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(brown_can) FROM users;")
-    #db.execute("INSERT INTO chart ( amount ) SELECT COUNT(blue_can) FROM users;")
-
-    # get the data from db for the table/graph on the admin pannel
+    # get the data from db for the table on the admin pannel
     all_users = db.execute("SELECT * FROM users;")
-    all_cans = db.execute("SELECT * FROM chart;")
 
-    # The query that shows all 4 cans amount numbers
-    differend_cans = 2, 1, 1, 1
-
-    differend_can_amounts = []
-    for total_amount in differend_can_amounts:
-        differend_can_amounts.append()
-
-    return render_template("admin_pannel.html", avatar=admin_username, users=all_users, sumed_can_amounts=sumed_can_amounts, differend_can_amounts = json.dumps(differend_can_amounts))
+    return render_template("admin_pannel.html", avatar=admin_username, users=all_users, sumed_can_amounts=sumed_can_amounts, differend_can_amounts=differend_can_amounts)
 
 #  ---------------------------------    ADMIN LOGIN PAGE    -----------------------------------
 
