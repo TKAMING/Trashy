@@ -52,11 +52,9 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, C
 🟢 Admin register
     🔴 Feature to create differents Admin´s (maybe with sessions)
 
-🔴 Admin pannel
-    🟠 Graphs
+🟢 Admin pannel
+    🟢 Graphs
     🟢 a table with all the registered users for this admin
-    🔴 log file data
-        - Different page
 
 🔴 Different user count´s for different admin´s in different neighbourhoods
 
