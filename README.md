@@ -17,7 +17,7 @@ in Germany there are yellow cans for plastic, black cans for residual waste, bro
     https://youtube.com/
 
 # How to register as a new Admin for your neighbourhood
-Go to
+Go to (Not online)
 
     https://trashy.com/admin/register
 
