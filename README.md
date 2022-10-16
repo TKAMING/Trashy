@@ -24,7 +24,7 @@ And fill out the form
 ## Extras for the Service Provider
 A Admin pannel to manage the users with graphs.
 
-    TODO add photo with admin pannel
+<img width="728" style="border-radius:10px" src="/static/trashy_admin_pannel.png" alt="Demo register"></a>
 
 
 ## Technologies used:
@@ -50,13 +50,7 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, C
     - to see the admin pannel
 
 🟢 Admin register
-    🔴 Feature to create differents Admin´s (maybe with sessions)
 
-🔴 Admin pannel
-    🟠 Graphs
+🟢 Admin pannel
+    🟢 Graphs
     🟢 a table with all the registered users for this admin
-    🔴 log file data
-        - Different page
-
-🔴 Different user count´s for different admin´s in different neighbourhoods
-
