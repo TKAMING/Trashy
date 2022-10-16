@@ -24,7 +24,7 @@ And fill out the form
 ## Extras for the Service Provider
 A Admin pannel to manage the users with graphs.
 
-    TODO add photo with admin pannel
+<img width="728" style="border-radius:10px" src="/static/trashy_admin_pannel.png" alt="Demo register"></a>
 
 
 ## Technologies used:
