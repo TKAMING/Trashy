@@ -35,7 +35,9 @@ A Admin pannel to manage the users with graphs.
 #### The index page:
 The Index is the form the users have to fill out if they wanted to get the service
 
-<img width="728" style="border-radius:10px" src="/static/trashy_form.png" alt="Demo register"></a>
+<img width="728" style="border-radius:10px" src="/static/trashy_form1.png" alt="Demo register"></a>
+
+<img width="728" style="border-radius:10px" src="/static/trashy_form2.png" alt="Demo register"></a>
 
 ### The what we do page
 The what we do page shows all recend activities Trashy were part of
