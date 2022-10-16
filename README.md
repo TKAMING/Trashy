@@ -32,7 +32,7 @@ A Admin pannel to manage the users with graphs.
 
 ## What the differend Pages does
 
-#### The index page:
+### The index page
 The Index is the form the users have to fill out if they wanted to get the service
 
 <img width="728" style="border-radius:10px" src="/static/trashy_form1.png" alt="Demo register"></a>
