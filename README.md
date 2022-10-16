@@ -14,7 +14,7 @@ in Germany there are yellow cans for plastic, black cans for residual waste, bro
 
 ## Video Demo:
 
-    https://youtube.com/
+    https://youtu.be/O9ut1eciAfA
 
 # How to register as a new Admin for your neighbourhood
 Go to (Not online)
