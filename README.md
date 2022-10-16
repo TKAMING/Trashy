@@ -26,6 +26,39 @@ A Admin pannel to manage the users with graphs.
 
 <img width="728" style="border-radius:10px" src="/static/trashy_admin_pannel.png" alt="Demo register"></a>
 
+## What the differend Pages does
+
+#### The index page:
+The Index is the form the users have to fill out if they wanted to get the service
+
+<img width="728" style="border-radius:10px" src="/static/trashy_form.png" alt="Demo register"></a>
+
+### The what we do page
+The what we do page shows all recend activities Trashy were part of
+
+<img width="728" style="border-radius:10px" src="/static/trashy_what_we_do.png" alt="Demo register"></a>
+
+### The Team page
+The Team page shows who the team is behind Trashy (only me)
+
+<img width="728" style="border-radius:10px" src="/static/trashy_theteam.png" alt="Demo register"></a>
+
+### Imprint
+Is just the imprint (is in germanys websites duty)
+
+<img width="728" style="border-radius:10px" src="/static/trashy_imprint.png" alt="Demo register"></a>
+
+### Log in page
+Is just to login for the Admin (the page were the Admin gets redirected if he hasn´t a session)
+
+<img width="728" style="border-radius:10px" src="/static/trashy_admin_login.png" alt="Demo register"></a>
+
+### The Admin pannel
+The page were the Admin can see all the registered user for him + a graph were he can see how many cans from wich cans and the total can amount
+
+<img width="728" style="border-radius:10px" src="/static/trashy_admin_pannel.png" alt="Demo register"></a>
+
+(the profile pictures letters can change, but only if the website had an public domain + uncommend the code)
 
 ## Technologies used:
 Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, Chart.js
