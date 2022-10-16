@@ -3,7 +3,7 @@
 Trashy is a website to manage garbage cans. 
 You can get a account as an admin and provide via Trashy a service for your neighbourhood.
 Then your neighbours can go to the Trashy website fill out the form which cans you have to put out and where.
-Then the provider have to go and check the list of registered usern + put the trash cans in front of the doors from the user that filled out the form.
+Then the provider have to go and check the list of registered users + put the trash cans in front of the doors from the user that filled out the form.
 Ofcours will the user have to pay for this service.
 +
 the users can also add a note for the admin for maybe cut the lawn.
