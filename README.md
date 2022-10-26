@@ -45,11 +45,6 @@ The Team page shows who the team is behind Trashy (only me)
 
 <img width="728" style="border-radius:10px" src="/static/trashy_theteam.png" alt="Demo register"></a>
 
-### Imprint
-Is just the imprint (is in germanys websites duty)
-
-<img width="728" style="border-radius:10px" src="/static/trashy_imprint.png" alt="Demo register"></a>
-
 ### Log in page
 Is just to login for the Admin (the page were the Admin gets redirected if he hasn´t a session)
 
