@@ -8,9 +8,13 @@ Ofcours will the user have to pay for this service.
 +
 the users can also add a note for the admin for maybe cut the lawn.
 
+---
+
 
 ## How it is in Germany
 in Germany there are yellow cans for plastic, black cans for residual waste, brown cans for organic waste and blue cans for paper waste. They are picked up by the garbage disposal every week.
+
+---
 
 # How to register as a new Admin for your neighbourhood
 Go to (Not online)
@@ -20,6 +24,8 @@ Go to (Not online)
 And fill out the form
 
 <img width="728" style="border-radius:10px" src="/static/trashy_admin_register.png" alt="Demo register"></a>
+
+---
 
 ## Extras for the Service Provider
 A Admin pannel to manage the users with graphs.
@@ -40,11 +46,6 @@ The what we do page shows all recend activities Trashy were part of
 
 <img width="728" style="border-radius:10px" src="/static/trashy_what_we_do.png" alt="Demo register"></a>
 
-### The Team page
-The Team page shows who the team is behind Trashy (only me)
-
-<img width="728" style="border-radius:10px" src="/static/trashy_theteam.png" alt="Demo register"></a>
-
 ### Log in page
 Is just to login for the Admin (the page were the Admin gets redirected if he hasn´t a session)
 
@@ -57,8 +58,12 @@ The page were the Admin can see all the registered user for him + a graph were h
 
 (the profile pictures letters can change, but only if the website had an public domain + uncommend the code)
 
-## Technologies used:
+---
+
+## Technologies used
 Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, Chart.js
+
+---
 
 
 ## To Do´s
@@ -84,3 +89,7 @@ Python, Flask, CS50 python library, HTML, CSS, SQLite3, JavaScript, Bootstrap, C
 🟢 Admin pannel
     🟢 Graphs
     🟢 a table with all the registered users for this admin
+    
+---
+    
+© 2022 by Tobias Karuth
